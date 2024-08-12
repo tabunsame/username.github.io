@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>シフト希望収集サイト</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>シフト希望を入力してください</h1>
+    <form id="shiftForm">
+        <label for="employeeName">従業員名:</label>
+        <input type="text" id="employeeName" name="employeeName" required>
+
+        <h2>希望するシフト</h2>
+        <label><input type="checkbox" name="shiftType" value="AM"> AM</label>
+        <label><input type="checkbox" name="shiftType" value="PM"> PM</label>
+        <label><input type="checkbox" name="shiftType" value="FULL"> FULL</label>
+        <label><input type="checkbox" name="shiftType" value="PMPP"> PMPP</label>
+
+        <h2>希望する出勤日数</h2>
+        <input type="number" id="workDays" name="workDays" min="1" required>
+
+        <button type="submit">送信</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
